@@ -35,38 +35,38 @@ body{
     background-repeat: no-repeat;
 }
 .card{
-    margin-top: 30px;
+
     margin-left: 27px;
-    width: 220px;
+    width: 225px;
     height: 400px;
     display: inline-block;
     border-radius: 10px;
     padding: 15px 25px;
     box-sizing: border-box;
     cursor: pointer;
-  
     background-position: center;
     background-size: cover;
     transition: transform 0.5s;
+    margin: 12px;
     
 }
 .image1{
     background-image: url(Images/p2.jpg);
 }
 .image2{
-    background-image: url(Images/p2.jpg);
+    background-image: url(Images/p3.png);
 }
 .image3{
-    background-image: url(Images/p2.jpg);
+    background-image: url(Images/p4.jpg);
 }
 .image4{
-    background-image: url(Images/p2.jpg);
+    background-image: url(Images/p5.jpg);
 }
 .image5{
-    background-image: url(Images/p2.jpg);
+    background-image: url(Images/p6.jpg);
 }
 .card:hover{
-    transform: translateY(-50px);
+    transform: translateY(-40px);
 }
 h5{
     color: #fff;
@@ -74,5 +74,7 @@ h5{
 
 }
 .card p{
+    font-size: 10px;
     text-shadow: 0 0 5px #999;
+    color: #fff;
 }
