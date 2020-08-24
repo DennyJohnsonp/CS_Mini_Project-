@@ -48,9 +48,8 @@ div h1{
     font-size: 90px;
     letter-spacing: 12px;
     background-blend-mode: multiply;
-
 }
-div form input{
+div form input,button{
     margin-right: 18px;
     margin-top: 19px;
     width: 160px;
@@ -69,13 +68,14 @@ div h1{
     text-align: left;
     margin-top: 0px;
     margin-left: 50px;
+    margin-right: 60px;
 }
-div form input:hover{
+div form input:hover,button:hover{
     background-color: rgba(72, 72, 235, 0.74);
 }
 .card{
-    width: 280px;
-    height: 190px;
+    width: 300px;
+    height: 200px;
     display: inline-block;
     border-radius: 10px;
     padding: 10px 25px;
@@ -86,19 +86,29 @@ div form input:hover{
     background-position: center;
 }
 .image1{
-    background-image: url(Images/p2.jpg);
+    background-image: url(Images/k1.jpg);
 }
 .image2{
-    background-image: url(Images/p3.png);
+    background-image: url(Images/k2.jpeg);
 }
 .image3{
-    background-image: url(Images/p4.jpg);
+    background-image: url(Images/k3.jpg);
 }
 .image5{
-    background-image: url(Images/p6.jpg);
+    background-image: url(Images/k4.jpg);
 }
 .card:hover{
     transform: translateX(-10px);
+}
+h5{
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+
+}
+.card p{
+    font-size: 10px;
+    text-shadow: 0 0 5px #999;
+    color: #fff;
 }
 .row{
     display: flex;
@@ -110,9 +120,9 @@ div form input:hover{
 }
 #bv{
     position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 1080px;
     display: none;
 }

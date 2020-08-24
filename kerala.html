@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Welcome</title>
+        <title>kerala</title>
     </head>
     <link rel="stylesheet" href="kerala.css">
     <body>
         <video autoplay loop muted plays-inline id="bv">
             <source src="videos/v1.mp4" type="video/mp4"> 
-       </video>
+        </video>
         <div>  
             <ul>
                 <h4 id="firstlink"><a href="#" style="text-decoration: none;">HOME</a></h4>
@@ -22,36 +22,36 @@
         <div class="row">
             <div class="col">
                 <h1>KERALA</h1>    
-                <form  id="pb" class="form1">  
-                    <input type="submit" value="WATCH VIDEO">
+                <form  id="pb" class="form1"> 
+                    <button type="button">WATCH VIDEO</button> 
                     <form action="packages.html" class="form2">  
                         <input type="submit" value="SEE PLANS">
                     </form>
                 </form>
             </div> 
-            <div class="col">
+            <div id="cd">
                 <div class="card image1">
-                    <h5>ANDHRA PRADASEH</h5>
+                    <h5>KOZHIKODE</h5>
                     <P>
-                        Andhra Pradesh, also known as Andhra or Andhra Rashtram
+                        4DAYS/5NIGHTS 60% DISCOUNT SEE MORE..
                     </P>
                 </div>
                 <div class="card image2">
-                    <h5>GOA</h5>
+                    <h5>BEKAL</h5>
                     <P>
-                        Goa is a state on southwestern coast of India within the region Konkan
+                        5DAYS/6NIGHTS 35% DISCOUNT SEE MORE..
                     </P>
                 </div>
                 <div class="card image3">
-                    <h5>KARNATAKA</h5>
+                    <h5>THIRUVANTHAPURAM</h5>
                     <P>
-                        Karnataka is a state in southwest India with Arabian Sea coastlines.
+                        7DAYS/8NIGHTS 20% DISCOUNT SEE MORE..
                     </P>
                 </div>
                 <div class="card image5">
-                    <h5>TAMIL NADU</h5>
+                    <h5>THRISSUR</h5>
                     <P>
-                        Tamil Nadu,a South Indian state,is famed for its Dravidian-style temples
+                        2DAYS/3NIGHTS 40% DISCOUNT SEE MORE..
                     </P>
                 </div>
             </div>       
@@ -59,18 +59,22 @@
         <script>
             var bv =document.getElementById('bv');
             var pb  =document.getElementById('pb');
-            var icon =document.getElementById('icon');    
+            var cd =document.getElementById('cd');   
+            document.getElementById('bv').currentTime = 10; 
              pb.onclick=function(){
                  bv.style.display="block";
                  if(bv.paused){
                      bv.play();
-                     icon.src = "Images/b2.png"
+                     document.getElementById('bv').style.zIndex = "-1";
+                     document.getElementById('cd').style.zIndex = "-2";
                  }
                  else{
                      bv.pause();
-                     icon.src = "Images/b1.png"
+                     document.getElementById('bv').style.zIndex = "-2";
+                     document.getElementById('cd').style.zIndex = "-1";
                  }
              }
+             
         </script>
     </body>
 </html>
