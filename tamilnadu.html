@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tamilnadu</title>
+    </head>
+    <link rel="stylesheet" href="tamilnadu.css">
+    <body>
+        <video autoplay loop muted plays-inline id="bv">
+            <source src="videos/v4.mp4" type="video/mp4"> 
+        </video>
+        <div>  
+            <ul>
+                <h4 id="firstlink"><a href="Mainpage.html" style="text-decoration: none;">HOME</a></h4>
+                <h4><a href="packages.html" style="text-decoration: none;">PACKAGES</a></h4>
+                <h4><a href="#" style="text-decoration: none;">HOTELS</a></h4>
+                <h4><a href="#" style="text-decoration: none;">TRANSPORT</a></h4>
+                <h4><a href="#" style="text-decoration: none;">GIFT CARD</a></h4>
+                <h4><a href="#" style="text-decoration: none;">ACCOUNT</a></h4>
+                <img src="Images/logo.png" name="Logo" width="300" height="150">
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>TAMILNADU</h1>    
+                <form  id="pb" class="form1"> 
+                    <button type="button">WATCH VIDEO</button> 
+                    <form action="packages.html" class="form2">  
+                        <input type="submit" value="SEE PLANS">
+                    </form>
+                </form>
+            </div> 
+            <div id="cd">
+                <div class="card image1">
+                    <h5>RAMESHWARAM</h5>
+                    <P>
+                        4DAYS/5NIGHTS 60% DISCOUNT SEE MORE..
+                    </P>
+                </div>
+                <div class="card image2">
+                    <h5>KODAIKANAL</h5>
+                    <P>
+                        5DAYS/6NIGHTS 35% DISCOUNT SEE MORE..
+                    </P>
+                </div>
+                <div class="card image3">
+                    <h5>MADURAI</h5>
+                    <P>
+                        7DAYS/8NIGHTS 20% DISCOUNT SEE MORE..
+                    </P>
+                </div>
+                <div class="card image5">
+                    <h5>AUROVILLE</h5>
+                    <P>
+                        2DAYS/3NIGHTS 40% DISCOUNT SEE MORE..
+                    </P>
+                </div>
+            </div>       
+        </div>
+        <script>
+            var bv =document.getElementById('bv');
+            var pb  =document.getElementById('pb');
+            var cd =document.getElementById('cd');   
+            document.getElementById('bv').currentTime = 36; 
+             pb.onclick=function(){
+                 bv.style.display="block";
+                 if(bv.paused){
+                     bv.play();
+                     document.getElementById('bv').style.zIndex = "-1";
+                     document.getElementById('cd').style.zIndex = "-2";
+                 }
+                 else{
+                     bv.pause();
+                     document.getElementById('bv').style.zIndex = "-2";
+                     document.getElementById('cd').style.zIndex = "-1";
+                 }
+             }
+             
+        </script>
+    </body>
+</html>
