@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-ul h4{
+
+ul h4 {
     float: left;
     margin-left: 5px;
     shape-outside: border-box;
@@ -12,20 +13,24 @@ ul h4{
     margin-top: 40px;
     font-size: 18px;
 }
+
 #firstlink {
     margin-left: 610px;
 }
-ul h4 a:hover{
+
+ul h4 a:hover {
     background-color: white;
     color: black;
     animation: 20ms ease;
 }
-ul h4 a{
+
+ul h4 a {
     color: white;
     border: 1px solid transparent;
-    padding:  5px 10px;
+    padding: 5px 10px;
 }
-body{
+
+body {
     background-image: url(Images/p1.jpg);
     width: 100%;
     height: 100%;
@@ -34,8 +39,8 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.card{
 
+.card {
     margin-left: 27px;
     width: 225px;
     height: 400px;
@@ -48,32 +53,38 @@ body{
     background-size: cover;
     transition: transform 0.5s;
     margin: 12px;
-    
 }
-.image1{
+
+.image1 {
     background-image: url(Images/p2.jpg);
 }
-.image2{
-    background-image: url(Images/p3.png);
+
+.image2 {
+    background-image: url(Images/p3.jpg);
 }
-.image3{
+
+.image3 {
     background-image: url(Images/p4.jpg);
 }
-.image4{
+
+.image4 {
     background-image: url(Images/p5.jpg);
 }
-.image5{
+
+.image5 {
     background-image: url(Images/p6.jpg);
 }
-.card:hover{
+
+.card:hover {
     transform: translateY(-40px);
 }
-h5{
+
+h5 {
     color: #fff;
     text-shadow: 0 0 5px #999;
-
 }
-.card p{
+
+.card p {
     font-size: 10px;
     text-shadow: 0 0 5px #999;
     color: #fff;

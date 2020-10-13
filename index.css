@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
+
+body {
     background-image: url(Images/b1.jpg);
     width: 100%;
     height: 100%;
@@ -13,24 +14,26 @@ body{
     background-repeat: no-repeat;
     animation: slide 15s infinite;
 }
-@keyframes slide{
-    20%{
+
+@keyframes slide {
+    20% {
         background-image: url(Images/b2.jpg);
     }
-    40%{
+    40% {
         background-image: url(Images/b3.jpg);
     }
-    60%{
+    60% {
         background-image: url(Images/b4.jpg);
     }
-    80%{
+    80% {
         background-image: url(Images/b5.jpg);
     }
-    100%{
+    100% {
         background-image: url(Images/b6.jpg);
     }
 }
-ul h4{
+
+ul h4 {
     float: left;
     margin-left: 5px;
     shape-outside: border-box;
@@ -39,24 +42,29 @@ ul h4{
     margin-top: 40px;
     font-size: 18px;
 }
+
 #firstlink {
     margin-left: 610px;
 }
-ul h4 a:hover{
+
+ul h4 a:hover {
     background-color: white;
     color: black;
     animation: 20ms ease;
 }
-ul h4 a{
+
+ul h4 a {
     color: white;
     border: 1px solid transparent;
-    padding:  5px 10px;
+    padding: 5px 10px;
 }
-ul img{
+
+ul img {
     margin-top: 1px;
     margin-left: 30px;
 }
-div h1{
+
+div h1 {
     color: rgba(255, 255, 255, 0.795);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -64,20 +72,31 @@ div h1{
     font-size: 90px;
     letter-spacing: 12px;
     background-blend-mode: multiply;
+}
 
+div form input {
+    margin-left: 550px;
+    margin-top: 40px;
+    width: 160px;
+    height: 45px;
+    border-radius: 30px;
+    padding: 10px 8px;
+    font-size: 15px;
+    background-color: rgba(206, 206, 214, 0.733);
+    border: 1px solid white;
+    color: aliceblue;
+    margin-bottom: 115px;
 }
-div form input{
-     margin-left: 550px;
-     margin-top: 40px;
-     width: 160px;
-     height: 45px;
-     border-radius: 30px;
-     padding: 10px 8px;   
-     font-size: 15px;
-     background-color: rgba(206, 206, 214, 0.733);
-     border: 1px solid white; 
-     color: aliceblue;
-}
-div form input:hover{
+
+div form input:hover {
     background-color: rgba(72, 72, 235, 0.74);
+}
+
+div h3 {
+    font-size: 12px;
+    padding: 3px;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    opacity: 0.8;
 }
