@@ -2,32 +2,38 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
 }
 
-ul h4 {
-    float: left;
-    margin-left: 5px;
-    shape-outside: border-box;
-    columns: 3fff;
-    background-blend-mode: multiply;
-    margin-top: 40px;
-    font-size: 18px;
+ul {
+    margin-top: 10px;
+}
+
+ul h4 a img {
+    width: 30px;
+    height: 30px;
+    padding: 12px;
+    background-color: white;
+    border-radius: 15px;
+    display: inline-block;
+    float: right;
+    margin: 14px;
+    margin-top: 25px;
 }
 
 #firstlink {
-    margin-left: 610px;
+    margin-right: 45px;
 }
 
-ul h4 a:hover {
-    background-color: white;
-    color: black;
-    animation: 20ms ease;
+#lastlink {}
+
+ul h4 img:hover {
+    transform: scale(1.5, 1.5);
 }
 
-ul h4 a {
-    color: white;
-    border: 1px solid transparent;
-    padding: 5px 10px;
+div div img {
+    float: left;
+    clear: left;
 }
 
 body {

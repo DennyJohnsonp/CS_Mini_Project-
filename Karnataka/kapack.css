@@ -1,0 +1,207 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(../Images/kp1.jpg);
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    background-size: cover;
+    background-repeat: repeat;
+    background-color: rgb(172, 216, 255);
+}
+
+.col {
+    padding-left: 20px;
+}
+
+div ul {
+    margin-top: 10px;
+}
+
+div ul h4 a img {
+    width: 30px;
+    height: 30px;
+    padding: 12px;
+    background-color: white;
+    border-radius: 15px;
+    display: inline-block;
+    float: right;
+    margin: 14px;
+    margin-top: 25px;
+}
+
+#firstlink {
+    margin-right: 45px;
+}
+
+#lastlink {}
+
+div ul h4 img:hover {
+    transform: scale(1.5, 1.5);
+}
+
+div div img {
+    float: left;
+    clear: left;
+}
+
+div h1 {
+    color: rgba(255, 255, 255, 0.795);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 110px;
+    font-size: 90px;
+    letter-spacing: 12px;
+    background-blend-mode: multiply;
+}
+
+div form input {
+    margin-left: 550px;
+    margin-top: 40px;
+    width: 160px;
+    height: 45px;
+    border-radius: 30px;
+    padding: 10px 8px;
+    font-size: 15px;
+    background-color: rgba(206, 206, 214, 0.733);
+    border: 1px solid white;
+    color: aliceblue;
+    margin-bottom: 133px;
+}
+
+div form input:hover {
+    background-color: rgba(72, 72, 235, 0.74);
+}
+
+.card {
+    margin-left: 20px;
+    width: 265px;
+    height: 220px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    margin: 20px;
+    margin-bottom: 24px;
+}
+
+h5 {
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+}
+
+.card p {
+    font-size: 10px;
+    text-shadow: 0 0 5px #999;
+    color: #fff;
+}
+
+.image1 {
+    background-image: url(../Images/ka1.jpg);
+}
+
+.image2 {
+    background-image: url(../Images/ka2.jpg);
+}
+
+.image3 {
+    background-image: url(../Images/ka3.jpg);
+}
+
+.image4 {
+    background-image: url(../Images/ka4.jpg);
+}
+
+.image6 {
+    background-image: url(../Images/p6.jpg);
+}
+
+.image7 {
+    background-image: url(../Images/p6.jpg);
+}
+
+.image8 {
+    background-image: url(../Images/p6.jpg);
+}
+
+.image9 {
+    background-image: url(../Images/p6.jpg);
+}
+
+.image10 {
+    background-image: url(../Images/p6.jpg);
+}
+
+.image11 {
+    background-image: url(../Images/p6.jpg);
+}
+
+.image12 {
+    background-image: url(../Images/p6.jpg);
+}
+
+.image13 {
+    background-image: url(../Images/p6.jpg);
+}
+
+.image14 {
+    background-image: url(../Images/p6.jpg);
+}
+
+.image15 {
+    background-image: url(../Images/p6.jpg);
+}
+
+.image16 {
+    background-image: url(../Images/p6.jpg);
+}
+
+.image17 {
+    background-image: url(../Images/p6.jpg);
+}
+
+.image18 {
+    background-image: url(../Images/p6.jpg);
+}
+
+.image19 {
+    background-image: url(../Images/p6.jpg);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 100px;
+    padding-top: 6px;
+}
+
+#myBtn:hover {
+    transform: scale(1.5, 1.5);
+}
+
+div button img {
+    width: 35px;
+    height: 25px;
+}

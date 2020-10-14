@@ -33,42 +33,42 @@ body {
     }
 }
 
-ul h4 {
-    float: left;
-    margin-left: 5px;
-    shape-outside: border-box;
-    columns: 3fff;
-    background-blend-mode: multiply;
-    margin-top: 40px;
-    font-size: 18px;
+div ul {
+    margin-top: 10px;
+}
+
+div ul h4 a img {
+    width: 30px;
+    height: 30px;
+    padding: 12px;
+    background-color: white;
+    border-radius: 15px;
+    display: inline-block;
+    float: right;
+    margin: 14px;
+    margin-top: 25px;
 }
 
 #firstlink {
-    margin-left: 610px;
+    margin-right: 45px;
 }
 
-ul h4 a:hover {
-    background-color: white;
-    color: black;
-    animation: 20ms ease;
+#lastlink {}
+
+div ul h4 img:hover {
+    transform: scale(1.5, 1.5);
 }
 
-ul h4 a {
-    color: white;
-    border: 1px solid transparent;
-    padding: 5px 10px;
-}
-
-ul img {
-    margin-top: 1px;
-    margin-left: 30px;
+div div img {
+    float: left;
+    clear: left;
 }
 
 div h1 {
     color: rgba(255, 255, 255, 0.795);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    margin-top: 110px;
+    margin-top: 100px;
     font-size: 90px;
     letter-spacing: 12px;
     background-blend-mode: multiply;

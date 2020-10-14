@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
+
+body {
     background-image: url(Images/ka0.jpg);
     width: 100%;
     height: 100%;
@@ -13,33 +14,38 @@ body{
     background-repeat: no-repeat;
 }
 
-ul h4{
-    float: left;
-    margin-left: 5px;
-    shape-outside: border-box;
-    columns: 3fff;
-    background-blend-mode: multiply;
-    margin-top: 40px;
-    font-size: 18px;
+div ul {
+    margin-top: 10px;
 }
-#firstlink {
-    margin-left: 610px;
-}
-ul h4 a:hover{
+
+div ul h4 a img {
+    width: 30px;
+    height: 30px;
+    padding: 12px;
     background-color: white;
-    color: black;
-    animation: 20ms ease;
+    border-radius: 15px;
+    display: inline-block;
+    float: right;
+    margin: 14px;
+    margin-top: 25px;
 }
-ul h4 a{
-    color: white;
-    border: 1px solid transparent;
-    padding:  5px 10px;
+
+#firstlink {
+    margin-right: 45px;
 }
-ul img{
-    margin-top: 1px;
-    margin-left: 30px;
+
+#lastlink {}
+
+div ul h4 img:hover {
+    transform: scale(1.5, 1.5);
 }
-div h1{
+
+div div img {
+    float: left;
+    clear: left;
+}
+
+div h1 {
     color: rgba(255, 255, 255, 0.795);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: left;
@@ -49,32 +55,39 @@ div h1{
     letter-spacing: 12px;
     background-blend-mode: multiply;
 }
-div form input,button{
+
+div form input,
+button {
     margin-right: 18px;
     margin-top: 19px;
     width: 160px;
     height: 45px;
     border-radius: 30px;
-    padding: 10px 8px;   
+    padding: 10px 8px;
     font-size: 15px;
     background-color: rgba(206, 206, 214, 0.733);
-    border: 1px solid white; 
+    border: 1px solid white;
     color: aliceblue;
 }
-.form1{
+
+.form1 {
     margin-left: 110px;
 }
-div h1{
+
+div h1 {
     text-align: left;
     margin-top: 0px;
     margin-left: 6px;
     margin-right: 0px;
     font-size: 70px;
 }
-div form input:hover,button:hover{
+
+div form input:hover,
+button:hover {
     background-color: rgba(72, 72, 235, 0.74);
 }
-.card{
+
+.card {
     width: 300px;
     height: 200px;
     display: inline-block;
@@ -86,44 +99,61 @@ div form input:hover,button:hover{
     background-size: cover;
     background-position: center;
 }
-.image1{
+
+.image1 {
     background-image: url(Images/ka1.jpg);
 }
-.image2{
+
+.image2 {
     background-image: url(Images/ka2.jpg);
 }
-.image3{
+
+.image3 {
     background-image: url(Images/ka3.jpg);
 }
-.image5{
+
+.image5 {
     background-image: url(Images/ka4.jpg);
 }
-.card:hover{
+
+.card:hover {
     transform: translateX(-10px);
 }
-h5{
+
+h5 {
     color: #fff;
     text-shadow: 0 0 5px #999;
-
 }
-.card p{
+
+.card p {
     font-size: 10px;
     text-shadow: 0 0 5px #999;
     color: #fff;
 }
-.row{
+
+.row {
     display: flex;
     height: 88%;
     align-items: center;
 }
-.col{
+
+.col {
     flex-basis: 50%;
 }
-#bv{
+
+#bv {
     position: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     display: none;
+}
+
+Video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
