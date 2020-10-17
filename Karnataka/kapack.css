@@ -79,12 +79,11 @@ div form input:hover {
 }
 
 .card {
-    margin-left: 20px;
-    width: 265px;
-    height: 220px;
+    margin-left: 0px;
+    width: 370px;
+    height: 400px;
     display: inline-block;
     border-radius: 10px;
-    padding: 15px 25px;
     box-sizing: border-box;
     cursor: pointer;
     background-position: center;
@@ -95,14 +94,19 @@ div form input:hover {
 }
 
 h5 {
-    color: blanchedalmond;
+    margin-top: 180px;
+    color: rgb(17, 17, 16);
     text-shadow: 0 0 5px #999;
+    background-color: white;
+    width: 370px;
+    height: 110px;
 }
 
 .card p {
     font-size: 10px;
     text-shadow: 0 0 5px #999;
-    color: blanchedalmond
+    color: rgb(12, 12, 12);
+    background-color: white;
 }
 
 .image1 {
@@ -212,4 +216,38 @@ h5 {
 div button img {
     width: 35px;
     height: 25px;
+}
+
+.tags {
+    display: inline;
+    position: relative;
+    float: right;
+    font-size: 8px;
+}
+
+.tags:hover:after {
+    background: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    bottom: -18px;
+    color: rgb(15, 14, 14);
+    content: attr(gloss);
+    padding: 2px;
+    position: absolute;
+    z-index: 98;
+    width: 45px;
+    text-align: center;
+    float: right;
+    margin-left: 18px;
+}
+
+.tags:hover:before {
+    border: solid;
+    border-color: rgb(255, 255, 255) transparent;
+    border-width: 0 6px 6px 6px;
+    bottom: -4px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
 }
