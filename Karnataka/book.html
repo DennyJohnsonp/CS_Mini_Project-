@@ -1,0 +1,75 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>Booking The package</title>
+    <link href="book.css" rel="stylesheet">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('form').onsubmit = function() {
+
+                const name = document.querySelector('#n').value;
+                const place = document.querySelector('#p').value;
+                const packagecode = document.querySelector('#pc').value;
+                var Adults = document.querySelector('#a').value;
+                var children = document.querySelector('#c').value;
+                var costA = Adults * 2500;
+                var costC = children * 1500;
+                var totalcost = costA + costC;
+
+                alert(`Name ${name},
+                   Place ${place},
+                   Package code ${packagecode},
+                   No of Audults ${Adults},
+                   No of Children ${children};
+                   total cost ${totalcost}`);
+
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <img src="../Images/logo.png">
+    <h1>Booking Packages</h1>
+    <form>
+        <div>
+            <table>
+                <h3>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input id="n" type="text"></h3>
+                </td>
+                </tr><br>
+                <h3>
+                    <tr>
+                        <td>Place:</td>
+                        <td> <input id="p" type="text"></h3>
+                </td>
+                </tr><br>
+                <h3>
+                    <tr>
+                        <td>Package code:</td>
+                        <td> <input id="pc" type="text"></h3>
+                </td>
+                </tr><br>
+                <h3>
+                    <tr>
+                        <td>no of Adults:</td>
+                        <td> <input id="a" type="number"></h3>
+                </td>
+                </tr><br>
+                <h3>
+                    <tr>
+                        <td>no of Chlidren:</td>
+                        <td><input id="c" type="number"></h3>
+                </td>
+                </tr><br>
+            </table>
+            <h3><input id="s" type="submit"></h3>
+        </div>
+
+    </form>
+</body>
+
+</html>

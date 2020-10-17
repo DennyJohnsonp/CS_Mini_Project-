@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Booking</title>
+</head>
+<link rel="stylesheet" href="booking.css">
+<script src="transport.js"></script>
+
+<body>
+    <div>
+        <ul>
+            <h4 id="firstlink">
+                <a href="account.html" style="text-decoration: none;"><img id="i1" src="Images/friends.png"></a>
+            </h4>
+            <h4>
+                <a href="gift.html" style="text-decoration: none;"><img id="i1" src="Images/gift-card.png"></a>
+            </h4>
+            <h4>
+                <a onclick="display()" return false href="#" style="text-decoration: none;"><img id="i1" src="Images/ticket.png"></a>
+            </h4>
+            <h4>
+                <a href="hotels.html" style="text-decoration: none;"><img id="i1" src="Images/online-booking.png"></a>
+                </a>
+            </h4>
+            <h4>
+                <a href="packages.html" style="text-decoration: none;"><img id="i1" src="Images/backpack.png"></a>
+            </h4>
+
+            <h4 id="lastlink">
+                <a href="index.html" style="text-decoration: none;"><img id="i1" src="Images/home.png"></a>
+            </h4>
+            <img src="Images/logo.png" name="Logo" width="300" height="150">
+        </ul>
+    </div>
+    <h1>Booking Packages</h1>
+    <form>
+        <div>
+            <table>
+                <h3>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input id="n" type="text"></h3>
+                </td>
+                </tr><br>
+                <h3>
+                    <tr>
+                        <td>Place:</td>
+                        <td> <input id="p" type="text"></h3>
+                </td>
+                </tr><br>
+                <h3>
+                    <tr>
+                        <td>Package code:</td>
+                        <td> <input id="pc" type="text"></h3>
+                </td>
+                </tr><br>
+                <h3>
+                    <tr>
+                        <td>no of Adults:</td>
+                        <td> <input id="a" type="number"></h3>
+                </td>
+                </tr><br>
+                <h3>
+                    <tr>
+                        <td>no of Chlidren:</td>
+                        <td><input id="c" type="number"></h3>
+                </td>
+                </tr><br>
+            </table>
+            <h3><input id="s" type="submit"></h3>
+        </div>
+
+    </form>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('form').onsubmit = function() {
+
+            const name = document.querySelector('#n').value;
+            const place = document.querySelector('#p').value;
+            const packagecode = document.querySelector('#pc').value;
+            var Adults = document.querySelector('#a').value;
+            var children = document.querySelector('#c').value;
+            var costA = Adults * 2500;
+            var costC = children * 1500;
+            var totalcost = costA + costC;
+
+            alert(`Name ${name},
+               Place ${place},
+               Package code ${packagecode},
+               No of Audults ${Adults},
+               No of Children ${children};
+               total cost ${totalcost}`);
+
+        }
+    })
+</script>
+
+</html>

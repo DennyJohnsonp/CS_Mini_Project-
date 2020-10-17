@@ -1,0 +1,182 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    margin-top: 0px;
+    top: -23px
+}
+
+body {
+    background-image: url("Images/hh.jpg");
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div ul {
+    margin-top: 0px;
+}
+
+div ul h4 a img {
+    width: 30px;
+    height: 30px;
+    padding: 12px;
+    background-color: white;
+    border-radius: 15px;
+    display: inline-block;
+    float: right;
+    margin: 14px;
+    margin-top: 25px;
+}
+
+#firstlink {
+    margin-right: 30px;
+}
+
+#lastlink {}
+
+div ul h4 img:hover {
+    transform: scale(1.5, 1.5);
+}
+
+img {
+    float: left;
+    clear: left;
+    margin-left: -40px;
+}
+
+#sea {
+    height: 40px;
+    width: 300px;
+    border-radius: 40px;
+    outline: none;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(253, 253, 253, 0.849);
+    border: white;
+}
+
+div {
+    top: 30%;
+    bottom: 20%;
+    padding: 30px;
+    margin: 5px;
+}
+
+#s {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 75px;
+    margin-left: 580px;
+    height: 36px;
+    border-radius: 20px;
+    width: 100px;
+    outline: none;
+    position: relative;
+    text-align: center;
+    right: 300px;
+    top: -40px;
+    padding: 7px;
+    border: rgba(43, 40, 40, 0.788);
+}
+
+#s:hover {
+    background-color: blue;
+    transform: scale(1.1, 1.1);
+}
+
+#ci {
+    height: 40px;
+    border-radius: 40px;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(253, 253, 253, 0.849);
+    border: white;
+    text-align: center;
+}
+
+#co {
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(253, 253, 253, 0.849);
+    border: white;
+    text-align: center;
+}
+
+#n {
+    width: 70px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(253, 253, 253, 0.849);
+    border: white;
+}
+
+h1 {
+    margin-left: 340px;
+    margin-top: 160px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 80px
+}
+
+#hotel {
+    position: relative;
+    top: -50px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#in {
+    position: relative;
+    text-align: center;
+    border: 2px solid;
+    border-color: aliceblue;
+    background-color: rgba(240, 224, 203, 0.411);
+    height: 90px;
+    border-radius: 10px;
+    opacity: 5;
+    margin-bottom: 10px;
+}
+
+.tags {
+    display: inline;
+    position: relative;
+    float: right;
+    font-size: 8px;
+}
+
+.tags:hover:after {
+    background: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    bottom: -18px;
+    color: rgb(15, 14, 14);
+    content: attr(gloss);
+    padding: 2px;
+    position: absolute;
+    z-index: 98;
+    width: 45px;
+    text-align: center;
+    float: right;
+    margin-left: 18px;
+}
+
+.tags:hover:before {
+    border: solid;
+    border-color: rgb(255, 255, 255) transparent;
+    border-width: 0 6px 6px 6px;
+    bottom: -4px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}

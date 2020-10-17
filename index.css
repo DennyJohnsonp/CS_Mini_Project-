@@ -100,3 +100,37 @@ div h3 {
     color: white;
     opacity: 0.8;
 }
+
+.tags {
+    display: inline;
+    position: relative;
+    float: right;
+    font-size: 8px;
+}
+
+.tags:hover:after {
+    background: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    bottom: -18px;
+    color: rgb(15, 14, 14);
+    content: attr(gloss);
+    padding: 2px;
+    position: absolute;
+    z-index: 98;
+    width: 45px;
+    text-align: center;
+    float: right;
+    margin-left: 18px;
+}
+
+.tags:hover:before {
+    border: solid;
+    border-color: rgb(255, 255, 255) transparent;
+    border-width: 0 6px 6px 6px;
+    bottom: -4px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}

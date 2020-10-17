@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url(Images/book1.jpg);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div ul {
+    margin-top: 10px;
+}
+
+div ul h4 a img {
+    width: 30px;
+    height: 30px;
+    padding: 12px;
+    background-color: white;
+    border-radius: 15px;
+    display: inline-block;
+    float: right;
+    margin: 14px;
+    margin-top: 25px;
+}
+
+#firstlink {
+    margin-right: 45px;
+}
+
+#lastlink {}
+
+div ul h4 img:hover {
+    transform: scale(1.5, 1.5);
+}
+
+div div img {
+    float: left;
+    clear: left;
+}

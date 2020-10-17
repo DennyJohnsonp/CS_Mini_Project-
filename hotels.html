@@ -1,12 +1,75 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
 
 <head>
-    <title>Hotels</title>
+    <title>hotel</title>
+    <link href="hotels.css" rel="stylesheet">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('form').onsubmit = function() {
+
+                const name = document.querySelector('#sea').value;
+                const checkin = document.querySelector('#ci').value;
+                const checkout = document.querySelector('#co').value;
+                var rooms = document.querySelector('#n').value;
+                var cost = rooms * 2500;
+
+                alert(`Destination ${name},
+                       Checkin ${checkin},
+                       Checkout ${checkout},
+                       No of Rooms ${rooms };
+                       total cost ${cost}`);
+            }
+        })
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('#T').onclick = function() {
+                alert(`OOPS Server Under Development !!!`);
+            }
+
+        })
+    </script>
 </head>
+<script src="transport.js"></script>
 
 <body>
-    <h1>Hotels to be done and too merge,Will be done soon </h1>
+    <div>
+        <img src="Images/logo.png" name="Logo" width="300" height="150">
+        <ul>
+            <h4 id="firstlink">
+                <a href="account.html" style="text-decoration: none;" class="tags" gloss="ACCOUNT"><img id="i1" src="Images/friends.png"></a>
+            </h4>
+            <h4>
+                <a href="gift.html" style="text-decoration: none;" class="tags" gloss="GIFT CARD"><img id="i1" src="Images/gift-card.png"></a>
+            </h4>
+            <h4>
+                <a onclick="display()" return false href="#" style="text-decoration: none;" class="tags" gloss="TICKETS"><img id="i1" src="Images/ticket.png"></a>
+            </h4>
+            <h4>
+                <a href="hotels.html" style="text-decoration: none;" class="tags" gloss="HOTELS"><img id="i1" src="Images/online-booking.png"></a>
+                </a>
+            </h4>
+            <h4>
+                <a href="packages.html" style="text-decoration: none;" class="tags" gloss="PACKAGES"><img id="i1" src="Images/backpack.png"></a>
+            </h4>
+
+            <h4 id="lastlink">
+                <a href="index.html" style="text-decoration: none;" class="tags" gloss="HOME"><img id="i1" src="Images/home.png"></a>
+            </h4>
+        </ul>
+    </div>
+    <h1> HOTEL BOOKING</h1>
+    <div id="Hotel">
+        <div id="in">
+            <FORM>
+                DESTINATION:
+                <INPUT id=sea TYPE="text" placeholder="SEARCH"> CHECKIN:
+                <INPUT id=ci TYPE="date"> CHECKOUT:
+                <INPUT id=co TYPE="date"> ROOMS:
+                <INPUT id=n TYPE="number">
+                <input id=s type="submit" value="BOOK">
+            </FORM>
+        </div>
+    </div>
 </body>
 
 </html>
