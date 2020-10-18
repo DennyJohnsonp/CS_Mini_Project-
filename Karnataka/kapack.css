@@ -3,10 +3,11 @@
     padding: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
+    z-index: 0;
 }
 
 body {
-    background-image: url(../Images/p1.jpg);
+    background-image: url(../Images/ai0.jpg);
     width: 100%;
     height: 1000px;
     position: relative;
@@ -81,32 +82,17 @@ div form input:hover {
 .card {
     margin-left: 0px;
     width: 370px;
-    height: 400px;
+    height: 210px;
     display: inline-block;
-    border-radius: 10px;
+    border-radius: 0px;
     box-sizing: border-box;
     cursor: pointer;
     background-position: center;
     background-size: cover;
     transition: transform 0.5s;
     margin: 20px;
-    margin-bottom: 24px;
-}
-
-h5 {
-    margin-top: 180px;
-    color: rgb(17, 17, 16);
-    text-shadow: 0 0 5px #999;
-    background-color: white;
-    width: 370px;
-    height: 110px;
-}
-
-.card p {
-    font-size: 10px;
-    text-shadow: 0 0 5px #999;
-    color: rgb(12, 12, 12);
-    background-color: white;
+    margin-bottom: 220px;
+    z-index: 0;
 }
 
 .image1 {
@@ -189,6 +175,10 @@ h5 {
     background-image: url(../Images/ai16.jpg);
 }
 
+.image21 {
+    background-image: url(../Images/ai20.jpg);
+}
+
 .card:hover {
     transform: translateY(-10px);
 }
@@ -198,7 +188,6 @@ h5 {
     position: fixed;
     bottom: 20px;
     right: 30px;
-    z-index: 99;
     font-size: 18px;
     border: none;
     outline: none;
@@ -234,7 +223,6 @@ div button img {
     content: attr(gloss);
     padding: 2px;
     position: absolute;
-    z-index: 98;
     width: 45px;
     text-align: center;
     float: right;
@@ -249,5 +237,69 @@ div button img {
     content: "";
     left: 50%;
     position: absolute;
-    z-index: 99;
+}
+
+div div div p {
+    background-color: rgba(236, 85, 39, 0.815);
+    font-size: 19px;
+    border-radius: 100px;
+    color: white;
+    width: 60px;
+    height: 20px;
+    padding: 4px;
+    padding-left: 10px;
+    padding-bottom: 7px;
+    margin-top: 190px;
+    margin-left: 24px;
+    z-index: 0;
+}
+
+div div div img {
+    margin-left: 205px;
+    margin-top: -29px;
+    width: 140px;
+    height: 32px;
+}
+
+div div div div {
+    background-color: rgba(255, 255, 255, 0.945);
+    height: 180px;
+    width: 337px;
+    margin-top: -24px;
+    padding: 3px;
+    border-radius: 10px;
+    padding-left: 15px;
+    z-index: -1;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+div div div div h4 {
+    padding-top: 30px;
+    color: red;
+    margin-bottom: 8px;
+}
+
+div div div div h6 {
+    padding-right: 12px;
+    color: red;
+    margin-bottom: 10px;
+}
+
+div div div div img {
+    margin-left: 0px;
+    margin-top: 2px;
+    width: 15px;
+    height: 15px;
+}
+
+div div div div h5 {
+    font-size: 10px;
+    display: inline;
+    margin-left: -70px;
+    color: red;
 }
