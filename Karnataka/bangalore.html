@@ -6,6 +6,7 @@
 </head>
 <link rel="stylesheet" href="bangalore.css">
 <script src="../transport.js"></script>
+<script src="../buttons.js"></script>
 
 <body>
     <video autoplay loop muted id="bv">
@@ -39,24 +40,24 @@
     <div class="row">
         <div class="col">
             <h2>BANGALORE</h2>
-            <h3>5000$</h3>
+            <h3>5000₹</h3>
             <h6>Bangalore is nicknamed the "Garden City" for its and parks and was once called a Pensioner's Paradise. Located on the Deccan Plateau in the south-eastern part of Karnataka, Bangalore is India's third most populated city and the fifth most
                 populated urban agglomeration.
             </h6>
             <div id="firstimg">
-                <img src="../Images/weather.png"><button type="button">Weather</button>
+                <img src="../Images/weather.png"><button onClick="document.getElementById('bottom').scrollIntoView();" type="button">Weather</button>
             </div>
             <div>
-                <img src="../Images/gallery.png"><button type="button">Gallery</button>
+                <img src="../Images/gallery.png"><button onclick="gallery()" return false href="#" type="button">Gallery</button>
             </div>
             <div>
-                <img src="../Images/location.png"><button type="button">Location</button>
+                <img src="../Images/location.png"><button onclick="weather()" return false href="#" type="button">Location</button>
             </div>
             <a href="book.html" style="text-decoration: none;"><img id="linklast" src="../Images/buy.png"></a>
             <a onclick="login()" return false href="#" style="text-decoration: none;"><img src="../Images/add-to-cart.png"></a>
             <a onclick="server()" return false href="#" style="text-decoration: none;"><img src="../Images/gift-card.png"></a>
         </div>
-        <div id="cd">
+        <div id="g">
             <div class="card image1">
             </div>
         </div>
@@ -88,6 +89,23 @@
             <h3 id="location">India</h3>
             <img id="pic" src="../Images/user3.jpg">
         </div>
+    </div>
+    <div id="l">
+        <iframe style=" z-index: 2; border-style: none;width: 560px; height: 409px; margin-top:-825px; margin-left:664px; position: absolute; border-radius: 10px;" src="https://maps.google.com/maps?width=560&amp;height=410&amp;hl=en&amp;q=Bangalore&amp;z=14&amp;output=embed"></iframe>
+    </div>
+    <div id="bottom">
+        <a class="weatherwidget-io" href="https://forecast7.com/en/12d9777d59/bengaluru/" data-label_1="BANGALORE" data-label_2="WEATHER" data-icons="Climacons" data-theme="weather_one">BANGALORE WEATHER</a>
+        <script>
+            ! function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = 'https://weatherwidget.io/js/widget.min.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document, 'script', 'weatherwidget-io-js');
+        </script>
     </div>
 </body>
 
