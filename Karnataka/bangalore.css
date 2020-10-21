@@ -205,6 +205,11 @@ div div div:hover {
     transform: scale(1.1, 1.1);
 }
 
+div div div:checked {
+    background-color: rgba(101, 5, 255, 0.959);
+    transform: scale(1.1, 1.1);
+}
+
 div div img {
     width: 20px;
     height: 20px;
@@ -225,6 +230,7 @@ div div button {
     color: black;
     border: none;
     top: -11px;
+    outline: none;
 }
 
 div div button:hover {
