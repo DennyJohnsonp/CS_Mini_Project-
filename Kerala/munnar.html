@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Munnar</title>
+</head>
+<link rel="stylesheet" href="munnar.css">
+<script src="../transport.js"></script>
+<script src="../buttons.js"></script>
+
+<body>
+    <video autoplay loop muted id="bv">
+            <source src="videos/v2.mp4" type="video/mp4"> 
+        </video>
+    <div>
+        <ul>
+            <h4 id="firstlink">
+                <a href="../account.html" style="text-decoration: none;" class="tags" gloss="ACCOUNT"><img id="i1" src="../Images/friends.png"></a>
+            </h4>
+            <h4>
+                <a href="../gift.html" style="text-decoration: none;" class="tags" gloss="GIFT CARD"><img id="i1" src="../Images/gift-card.png"></a>
+            </h4>
+            <h4>
+                <a onclick="display()" return false href="#" style="text-decoration: none;" class="tags" gloss="TICKETS"><img id="i1" src="../Images/ticket.png"></a>
+            </h4>
+            <h4>
+                <a href="../hotels.html" style="text-decoration: none;" class="tags" gloss="HOTELS"><img id="i1" src="../Images/online-booking.png"></a>
+                </a>
+            </h4>
+            <h4>
+                <a href="../packages.html" style="text-decoration: none;" class="tags" gloss="PACKAGES"><img id="i1" src="../Images/backpack.png"></a>
+            </h4>
+
+            <h4 id="lastlink">
+                <a href="../index.html" style="text-decoration: none;" class="tags" gloss="HOME"><img id="i1" src="../Images/home.png"></a>
+            </h4>
+            <img src="../Images/logo.png" name="Logo" width="300" height="150">
+        </ul>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h2>MUNNAR</h2>
+            <h3>6000₹</h3>
+            <p>/Per Person</p>
+            <h6>Munnar is a town in the Western Ghats mountain range in India’s Kerala state. A hill station and former resort for the British Raj elite, it's surrounded by rolling hills dotted with tea plantations established in the late 19th century. Eravikulam
+                National Park, a habitat for the endangered mountain goat Nilgiri tahr, is home to the Lakkam Waterfalls, hiking trails and 2,695m-tall Anamudi Peak.
+            </h6>
+            <div id="firstimg">
+                <img src="../Images/weather.png"><button onClick="document.getElementById('bottom').scrollIntoView();" type="button">Weather</button>
+            </div>
+            <div>
+                <img src="../Images/gallery.png"><button onclick="gallery()" return false href="#" type="button">Gallery</button>
+            </div>
+            <div>
+                <img src="../Images/location.png"><button onclick="weather()" return false href="#" type="button">Location</button>
+            </div>
+            <a href="../booking.html" style="text-decoration: none;"><img id="linklast" src="../Images/buy.png"></a>
+            <a onclick="login()" return false href="#" style="text-decoration: none;"><img src="../Images/add-to-cart.png"></a>
+            <a onclick="server()" return false href="#" style="text-decoration: none;"><img src="../Images/gift-card.png"></a>
+        </div>
+        <div id="g">
+            <div class="card image1">
+            </div>
+        </div>
+    </div>
+    <h1>USER REVIEW</h1>
+    <div class="review">
+        <div class="user">
+            <img src="../Images/right-quote.png"><br>
+            <h6>"Read genuine user reviews about brands, companies, or websites and make your spending decisions with an ease of mind"</h6>
+            <h3 id="name">Mark Zuckerberg</h3>
+            <h3 id="location">America</h3>
+            <img id="pic" src="../Images/user1.jpg">
+        </div>
+    </div>
+    <div class="review">
+        <div class="user">
+            <img src="../Images/right-quote.png"><br>
+            <h6>"Read genuine user reviews about brands, companies, or websites and make your spending decisions with an ease of mind"</h6>
+            <h3 id="name">Selena Gomez</h3>
+            <h3 id="location">Paris</h3>
+            <img id="pic" src="../Images/user2.jpg">
+        </div>
+    </div>
+    <div class="review">
+        <div class="user">
+            <img src="../Images/right-quote.png"><br>
+            <h6>"Read genuine user reviews about brands, companies, or websites and make your spending decisions with an ease of mind"</h6>
+            <h3 id="name">Narendra Modi</h3>
+            <h3 id="location">India</h3>
+            <img id="pic" src="../Images/user3.jpg">
+        </div>
+    </div>
+    <div id="l">
+        <iframe style=" z-index: 2; border-style: none;width: 560px; height: 409px; margin-top:-825px; margin-left:664px; position: absolute; border-radius: 10px;" src="https://maps.google.com/maps?width=560&amp;height=410&amp;hl=en&amp;q=Munnar&amp;z=14&amp;output=embed"></iframe>
+    </div>
+    <div id="bottom">
+        <a class="weatherwidget-io" href="https://forecast7.com/en/10d0977d06/munnar/" data-label_1="MUNNAR" data-label_2="WEATHER" data-theme="original">MUNNAR WEATHER</a>
+        <script>
+            ! function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = 'https://weatherwidget.io/js/widget.min.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document, 'script', 'weatherwidget-io-js');
+        </script>
+    </div>
+</body>
+
+</html>
