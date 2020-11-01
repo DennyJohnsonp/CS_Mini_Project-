@@ -7,10 +7,10 @@
 }
 
 body {
-    background-image: url(../Images/tapack01.jpg);
+    background-image: url(../Images/anpack.jpg);
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(3px);
     background-repeat: no-repeat;
     position: relative;
     background-size: cover;
@@ -97,87 +97,51 @@ div form input:hover {
 }
 
 .image1 {
-    background-image: url(../Images/t3.jpg);
+    background-image: url(../Images/anpackvis01.jpg);
 }
 
 .image2 {
-    background-image: url(../Images/t1.jpg);
+    background-image: url(../Images/anpacktir01.jpg);
 }
 
 .image3 {
-    background-image: url(../Images/t2.jpg);
+    background-image: url(../Images/a1.jpg);
 }
 
 .image4 {
-    background-image: url(../Images/t4.jpg);
+    background-image: url(../Images/a3.jpg);
 }
 
 .image5 {
-    background-image: url(../Images/ai1.webp);
+    background-image: url(../Images/a4.jpg);
 }
 
 .image6 {
-    background-image: url(../Images/tapackche01.jpg);
+    background-image: url(../Images/anpackvij01.jpg);
 }
 
 .image7 {
-    background-image: url(../Images/tapackpon04.jpg);
+    background-image: url(../Images/anpacksris01.jpg);
 }
 
 .image8 {
-    background-image: url(../Images/tapackkan04.jpg);
+    background-image: url(../Images/anpackpap01.jpg);
 }
 
 .image9 {
-    background-image: url(../Images/tapacktir04.jpg);
+    background-image: url(../Images/anpackaho01.jpg);
 }
 
 .image10 {
-    background-image: url(../Images/tapacktan04.png);
+    background-image: url(../Images/anpackgan01.jpg);
 }
 
 .image11 {
-    background-image: url(../Images/tapackcom01.jpg);
+    background-image: url(../Images/anpackraj01.jpg);
 }
 
 .image12 {
-    background-image: url(../Images/tapackcoo04.jpg);
-}
-
-.image13 {
-    background-image: url(../Images/tapackyer04.jpg);
-}
-
-.image14 {
-    background-image: url(../Images/tapacktiru04.jpg);
-}
-
-.image15 {
-    background-image: url(../Images/tapackvel04.jpg);
-}
-
-.image16 {
-    background-image: url(../Images/tapacktut04.jpg);
-}
-
-.image17 {
-    background-image: url(../Images/tapackyel04.jpg);
-}
-
-.image18 {
-    background-image: url(../Images/tapackvell04.jpg);
-}
-
-.image19 {
-    background-image: url(../Images/tapackchet04.jpg);
-}
-
-.image20 {
-    background-image: url(../Images/tapacksal04.jpg);
-}
-
-.image21 {
-    background-image: url(../Images/tapackpal04.webp);
+    background-image: url(../Images/anpackama01.jpg);
 }
 
 .card:hover {
